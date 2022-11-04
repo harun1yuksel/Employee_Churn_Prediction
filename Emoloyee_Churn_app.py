@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 
-st.markdown("<h1 style='text-align: center; color: Indigo;'>This is an Employee Churn Prediction Application</h1>", unsafe_allow_html=True)
+st.title("<h1 style='text-align: center; color: Indigo;'>This is an Employee Churn Prediction Application</h1>", unsafe_allow_html=True)
 
 
 
