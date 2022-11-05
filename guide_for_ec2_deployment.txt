@@ -61,28 +61,28 @@ $ sudo yum install git
 
 10. Copy app files into ec2
 
-a. method 1 : use git clone method:
+	a. method 1 : use git clone method:
 
       $ git clone https://github.com/.....
 
   (before that you need to copy the htpps addres from your git accout)
 
-b. Method 2: if you are using vs code:
+	b. Method 2: if you are using vs code:
 
    - Create folder in ec2 ("mkdir foldername" from terminal) 
    - change directory to new folder
      cd foldername
    - Copy files from desktop into new folder
 
-(rm -rf folder_name    --- to delet the folder with the files inside it)
+	(rm -rf folder_name    --- to delet the folder with the files inside it)
 
-c. method 3: 
+	c. method 3: 
  
-if you cannot copy via vscode use secure copy method:
+	if you cannot copy via vscode use secure copy method:
 	
 	upload file from terminal. open a new terminal where your ..pem file is located.gi
      
-   scp -i .....pem requirements.txt ec2-user@....:/home/ec2-user/streamlit
+   	scp -i .....pem requirements.txt ec2-user@....:/home/ec2-user/streamlit
                   
 	In the folder where the pem file is located, open terminal and write the filename with the path instead of filename. 
 	Find your user@.... from the aws console and replace it. The command will write to the folder in ec2
@@ -101,7 +101,7 @@ if you cannot copy via vscode use secure copy method:
 
     pip3 install -r requirements.txt
 
-or to install manually
+	or to install manually
 
   - pip3 install scikit-learn==1.0.2st 
     or (sudo python3.7 -m pip3 install scikit-learn==1.0.2)
@@ -109,8 +109,8 @@ or to install manually
     or (sudo python3.7 -m pip install streamlit==1.10.0)
 
 
-(pip3 list) to see the packages
-(pip3 freeze > requirements.txt) to create requirement file
+	(pip3 list) to see the packages
+	(pip3 freeze > requirements.txt) to create requirement file
 
 
 15. streamlit run app.py
