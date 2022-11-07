@@ -84,25 +84,27 @@ elif promotion_last_5years == "No":
 
 satisfaction_level = st.sidebar.slider("Satisfaction level:",min_value=0, max_value=100)
 
-last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100)
-
 time_spend_company = st.sidebar.slider("Working years:",min_value=1, max_value=10)
+
+number_project = st.sidebar.slider("Number of projects:",min_value=1, max_value=10)
 
 average_montly_hours = st.sidebar.slider("Working hours:",min_value=40, max_value=310)
 
-number_project = st.sidebar.slider("Number of projects:",min_value=1, max_value=10)
+last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100)
+
+
 
 
 
    
 my_dict = {
-    'departments': Department,
-    'salary': Salary,
     'satisfaction_level': (satisfaction_level/100) ,
-    'last_evaluation': last_evaluation/100,
+    'time_spend_company': time_spend_company,
     'number_project': number_project,
     'average_montly_hours': average_montly_hours,
-    'time_spend_company': time_spend_company,
+    'last_evaluation': last_evaluation/100,
+    'departments': Department,
+    'salary': Salary,
     'Work_accident': Work_accident,
     'promotion_last_5years': promotion_last_5years  
 }
@@ -124,7 +126,3 @@ with col2:
             st.error("Your employee is very likely to leave the company")
         else:
             st.success("Your employee is loyal to the company")
-
-
-
-
