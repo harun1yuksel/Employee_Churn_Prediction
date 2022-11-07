@@ -126,3 +126,5 @@ with col2:
             st.error("Your employee is very likely to leave the company")
         else:
             st.success("Your employee is loyal to the company")
+            
+st.markdown('###### Trained and Deployed by Harun Yüksel')
