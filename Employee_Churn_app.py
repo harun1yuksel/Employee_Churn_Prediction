@@ -21,7 +21,6 @@ st.success('###### The model was trained with the following parameters of nearly
 
 st.info("###### 1. Satisfaction level: Employee satisfaction point, which ranges from 0-100 :smiley:\n"
          "###### 2. Performance: Evaluated performance, which also ranges from 0-100 :male-detective:\n"
-         "###### 2. Performance: Evaluated performance, which also ranges from 0-100 :male-detective:\n"
          "###### 3. Working years: The number of years spent by an employee in the company :older_adult:\n"
          "###### 4. Working hours: How many hours an employee worked in a month? :stopwatch:\n"
          "###### 5. Number of projects: How many projects the employee is assigned to? :open_file_folder:\n"
@@ -99,14 +98,14 @@ last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100)
    
 my_dict = {
     'satisfaction_level': (satisfaction_level/100) ,
-    'time_spend_company': time_spend_company,
+    'last_evaluation': last_evaluation/100,
     'number_project': number_project,
     'average_montly_hours': average_montly_hours,
-    'last_evaluation': last_evaluation/100,
-    'departments': Department,
-    'salary': Salary,
+    'time_spend_company': time_spend_company,
     'Work_accident': Work_accident,
-    'promotion_last_5years': promotion_last_5years  
+    'promotion_last_5years': promotion_last_5years,  
+    'departments': Department,
+    'salary': Salary
 }
 
 
