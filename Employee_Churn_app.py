@@ -41,8 +41,8 @@ col, col2 = st.columns([4, 4])
 with col:
     st.markdown("###### Please select a department")
     Department = st.selectbox("Departments",
-            ('sales', 'accounting', 'hr', 'technical', 'support', 'management',
-        'IT', 'product_mng', 'marketing', 'RandD')
+            ('IT', 'sales', 'accounting', 'hr', 'technical', 'support', 'management',
+         'product_mng', 'marketing', 'RandD')
         )
 with col2:
     st.markdown("###### Please select a salary")
@@ -73,7 +73,7 @@ with col2:
     st.markdown("###### Received any promotions in the past five years?")   
     promotion_last_5years = st.radio(
         "Promotion",
-        ('Yes', 'No')
+        ('No' , 'Yes')
         )   
 if promotion_last_5years == "Yes":   
     promotion_last_5years = 1 
@@ -81,15 +81,15 @@ elif promotion_last_5years == "No":
     promotion_last_5years = 0
 
 
-satisfaction_level = st.sidebar.slider("Satisfaction level:",min_value=0, max_value=100)
+satisfaction_level = st.sidebar.slider("Satisfaction level:",min_value=0, max_value=100, value=35)
 
-time_spend_company = st.sidebar.slider("Working years:",min_value=1, max_value=10)
+time_spend_company = st.sidebar.slider("Working years:",min_value=1, max_value=10, value=5)
 
-number_project = st.sidebar.slider("Number of projects:",min_value=1, max_value=10)
+number_project = st.sidebar.slider("Number of projects:",min_value=1, max_value=10, value=7)
 
-average_montly_hours = st.sidebar.slider("Working hours:",min_value=40, max_value=310)
+average_montly_hours = st.sidebar.slider("Working hours:",min_value=40, max_value=310, value=175)
 
-last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100)
+last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100, , value=30)
 
 
 
