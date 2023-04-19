@@ -89,7 +89,7 @@ number_project = st.sidebar.slider("Number of projects:",min_value=1, max_value=
 
 average_montly_hours = st.sidebar.slider("Working hours:",min_value=40, max_value=310, value=175)
 
-last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100, , value=30)
+last_evaluation = st.sidebar.slider("Performance:",min_value=0, max_value=100,  value=30)
 
 
 
