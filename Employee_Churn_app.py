@@ -126,4 +126,4 @@ with col2:
         else:
             st.success("Your employee is loyal to the company")
             
-st.markdown('###### Trained and Deployed by Harun Yüksel')
+st.markdown('###### Trained and Deployed by Harun Yuksel')
