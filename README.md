@@ -1,3 +1,3 @@
 Employee Churn Prediction with Different ML models. 
 
-Deployment link : https://harunyukselemployeechurn.streamlit.app/
+Deployment link : https://employeechurnprediction-harunyuksel.streamlit.app/
